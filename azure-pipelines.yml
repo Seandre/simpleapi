@@ -19,7 +19,7 @@ steps:
 - task: DotNetCoreCLI@2
   inputs: 
     command: test
-    projects: '**/*Test/*.csproject'
+    projects: '**/*test/*.csproject'
     arguements: '--configuration $(buildConfiguration)'
     
 - task: NuGetToolInstaller@1
