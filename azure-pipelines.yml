@@ -19,7 +19,7 @@ steps:
 - task: DotNetCoreCLI@2
   inputs: 
     command: test
-    projects: '/Users/seanpinzon/simpleapi/test/SimpleAPI.test/SimpleAPI.test.csproj'
+    projects: '**/*.csproj'
     arguements: '--configuration $(buildConfiguration)'
     
 - task: NuGetToolInstaller@1
